@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+   <case>
+      <element>
+         <citta>Riva del garda</citta>
+         <famiglia>
+            <element>
+               <nome>Davide</nome>
+               <uid>tu6C8vIAdYkCkCsEQqvI</uid>
+            </element>
+            <element>
+               <nome>Dio</nome>
+               <uid>tu6Cf8IAdYkhkCsEQqvI</uid>
+            </element>
+         </famiglia>
+         <indirizzo>Via lavino 11</indirizzo>
+         <paese>Italia</paese>
+         <router>
+            <IP>192.138.1.1</IP>
+            <MAC>MAC Address</MAC>
+            <SSID>network SSID</SSID>
+            <nome>router</nome>
+            <password>network password</password>
+         </router>
+         <services>
+            <element>
+               <active>true</active>
+               <descrizione>Bank account connected</descrizione>
+               <nome>bank</nome>
+            </element>
+            <element>
+               <active>false</active>
+               <descrizione>Storage into web</descrizione>
+               <nome>storage</nome>
+            </element>
+            <element>
+               <active>false</active>
+               <descrizione>Component with the weather</descrizione>
+               <nome>weather</nome>
+            </element>
+         </services>
+         <stanze>
+            <element>
+               <nome>bagno vasca</nome>
+            </element>
+            <element>
+               <nome>bagno doccia</nome>
+            </element>
+            <element>
+               <dispositivi>
+                  <element>
+                     <IP>192.168.1.2</IP>
+                     <MAC>MAC Address</MAC>
+                     <nome>computer</nome>
+                  </element>
+                  <element>
+                     <IP>192.168.1.3</IP>
+                     <MAC>MAC Address</MAC>
+                     <nome>lampadario</nome>
+                  </element>
+                  <element>
+                     <IP>192.168.1.4</IP>
+                     <MAC>MAC Address</MAC>
+                     <nome>raspberry</nome>
+                  </element>
+               </dispositivi>
+               <nome>camera davide</nome>
+            </element>
+            <element>
+               <nome>camera genitori</nome>
+            </element>
+            <element>
+               <nome>camera vale auri</nome>
+            </element>
+            <element>
+               <nome>corridoio</nome>
+            </element>
+            <element>
+               <nome>cucina</nome>
+            </element>
+            <element>
+               <dispositivi>
+                  <element>
+                     <IP>192.168.1.5</IP>
+                     <MAC>MAC Address</MAC>
+                     <nome>irrigazione</nome>
+                  </element>
+               </dispositivi>
+               <nome>giardino</nome>
+            </element>
+            <element>
+               <dispositivi>
+                  <element>
+                     <IP>192.168.1.6</IP>
+                     <MAC>MAC Address</MAC>
+                     <nome>luci</nome>
+                  </element>
+               </dispositivi>
+               <nome>sala</nome>
+            </element>
+         </stanze>
+      </element>
+   </case>
+</root>

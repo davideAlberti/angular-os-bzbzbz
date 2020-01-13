@@ -1,0 +1,108 @@
+<!-- <div class="container">    
+  <table class="table table-bordered table-hover">    
+    <tr>    
+      <th>Id</th>    
+      <th>Name</th>    
+      <th>Gender</th>    
+      <th>Mobile</th>    
+    </tr>    
+    <tr *ngFor="let item of xmlItems">    
+      <td>{{item.id}}</td>    
+      <td>{{item.name}}</td>    
+      <td>{{item.gender}}</td>    
+      <td>{{item.mobile}}</td>    
+    </tr>    
+  </table>    
+</div>   -->
+
+<div *ngFor="let item of data">
+	<div *ngFor="let i of item.element">
+		<div>
+			<table class="table table-bordered table-hover">
+				<tr>
+					<th>Citt&agrave;</th>
+					<th>Indirizzo</th>
+					<th>Paese</th>
+					<th>Router</th>
+					<th>Famiglia</th>
+					<th>Services</th>
+					<th>Stanze</th>
+				</tr>
+				<tr>
+					<td>{{ i.citta[0] }}</td>
+					<td>{{ i.indirizzo[0] }}</td>
+					<td>{{ i.paese[0] }}</td>
+					<td>
+						<table class="table table-bordered table-hover">
+							<tr>
+								<th>Nome</th>
+								<th>IP</th>
+								<th>MAC</th>
+								<th>SSID</th>
+								<th>password</th>
+							</tr>
+							<tr>
+								<td>{{ i.router[0].nome[0] }}</td>
+								<td>{{ i.router[0].IP[0] }}</td>
+								<td>{{ i.router[0].MAC[0] }}</td>
+								<td>{{ i.router[0].SSID[0] }}</td>
+								<td>{{ i.router[0].password[0] }}</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="table table-bordered table-hover">
+							<tr>
+								<th>Nome</th>
+								<th>UID</th>
+							</tr>
+							<tr *ngFor="let x of i.famiglia[0].element">
+								<td>{{ x.nome[0] }}</td>
+								<td>{{ x.uid[0] }}</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="table table-bordered table-hover">
+							<tr>
+								<th>Nome</th>
+								<th>Descrizione</th>
+								<th>Active</th>
+							</tr>
+							<tr *ngFor="let x of i.services[0].element">
+								<td>{{ x.nome[0] }}</td>
+								<td>{{ x.descrizione[0] }}</td>
+								<td>{{ x.active[0] }}</td>
+							</tr>
+						</table>
+					</td>
+					<td>
+						<table class="table table-bordered table-hover">
+							<tr>
+								<th>Nome</th>
+								<th>Dispositivi</th>
+							</tr>
+							<tr *ngFor="let x of i.stanze[0].element">
+								<td>{{ x.nome[0] }}</td>
+								<td *ngIf="x.dispositivi">
+									<table class="table table-bordered table-hover">
+										<tr>
+											<th>Nome</th>
+                      <th>IP</th>
+                      <th>MAC</th>
+										</tr>
+										<tr *ngFor="let z of x.dispositivi[0].element">
+											<td>{{ z.nome[0] }}</td>
+                      <td>{{ z.IP[0] }}</td>
+                      <td>{{ z.MAC[0] }}</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
